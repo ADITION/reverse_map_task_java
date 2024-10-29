@@ -4,7 +4,7 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class GenerateReverseMapTest {
+class GenerateReverseMapTest {
 
     private final ReverseMapGenerator reverseMapGenerator = new ReverseMapGenerator();
 
@@ -43,16 +43,16 @@ public class GenerateReverseMapTest {
     Clicks field shows how many times user clicked.
 
     bannerIdToUserIdsCount = Map {
-        111111:
+        111111:                         // click ids for banner 111111
             [
-                User (11, 12, 13, 2)
+                User (11, 12, 13, 2)    // click ids 1 and 2
             ]
         ),
-        222222:
+        222222:                         // click ids for banner 222222
             [
-                User (21, 22, 23, 1),
-                User (31, 32, 33, 1),
-                User (41, 42, 43, 1)
+                User (21, 22, 23, 1),   // click id 1
+                User (31, 32, 33, 1),   // click id 2
+                User (41, 42, 43, 1)    // click id 3
              ]
         )
     }
